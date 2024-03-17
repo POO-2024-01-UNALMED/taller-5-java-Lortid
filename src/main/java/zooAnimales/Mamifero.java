@@ -19,14 +19,14 @@ public Mamifero (String nombre, int edad, String habitat, String genero, boolean
 	super(nombre, edad, habitat, genero);
 	this.pelaje = pelaje;
 	this.patas = patas;
-	Mamifero.listado.add(this);
+	listado.add(this);
 	
 		
 }
 
 public Mamifero () {
 	
-	Mamifero.listado.add(this);
+	listado.add(this);
 	
 }
 

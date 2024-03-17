@@ -5,12 +5,12 @@ import gestion.Zona;
 
 public class Reptil extends Animal {
 	
-	private ArrayList <Reptil> listado = new ArrayList<Reptil>();
+	private static ArrayList <Reptil> listado = new ArrayList<Reptil>();
 	public static int iguanas;
 	public static int serpientes;
 	private String colorEscamas;
 	private int largoCola;
-	private static int cantidadReptil;
+	
 	
 	
 public Reptil (String nombre, int edad, String habitat, String genero, String colorEscamas, int largoCola) {
@@ -18,15 +18,15 @@ public Reptil (String nombre, int edad, String habitat, String genero, String co
 	super( nombre, edad, habitat, genero);
 	this.colorEscamas = colorEscamas;
 	this.largoCola = largoCola;
-	this.listado.add(this);
-	cantidadReptil++;
+	listado.add(this);
+	
 	
 }
 	
 public Reptil () {
 	
-	this.listado.add(this);
-	cantidadReptil++;
+	listado.add(this);
+	
 }
 
 public ArrayList<Reptil> getListado (){
@@ -34,6 +34,14 @@ public ArrayList<Reptil> getListado (){
 	return listado;
 	
 }
+
+public static int getCantidadReptil(){
+	
+	return listado.size();
+	
+}
+
+
 
 public String getColorEscamas () {
 	
@@ -49,7 +57,7 @@ public int getLargoCola () {
 
 public void setListado (ArrayList<Reptil> listado) {
 	
-	this.listado = listado;
+	Reptil.listado = listado;
 	
 }
 
@@ -85,10 +93,7 @@ public static Reptil crearSerpiente(String nombre, int edad, String genero) {
 	return nuevaSerpiente;
 }
 
-public static int getCantidadReptil() {
-	
-	return cantidadReptil;
-}
+
 
 
 }

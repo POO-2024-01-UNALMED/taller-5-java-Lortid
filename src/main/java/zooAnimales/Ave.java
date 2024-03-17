@@ -17,14 +17,14 @@ public Ave (String nombre, int edad, String habitat, String genero, String color
 	
 	super(nombre, edad, habitat, genero);
 	this.colorPlumas = colorPlumas;
-	Ave.listado.add(this);
+	listado.add(this);
 	
 	
 }
 
 public Ave () {
 	
-	Ave.listado.add(this);
+	listado.add(this);
 	
 }
 

@@ -23,7 +23,7 @@ public class p {
 			ok = true;	
 	}
 		
-		System.out.print(ok);
+		System.out.print(Animal.totalPorTipo());
 
 }
 	

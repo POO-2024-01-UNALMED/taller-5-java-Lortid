@@ -18,7 +18,7 @@ public Anfibio(String nombre, int edad, String habitat, String genero, String co
 	super(nombre, edad, habitat, genero);
 	this.colorPiel = colorPiel;
 	this.venenoso = venenoso;
-	Anfibio.listado.add(this);
+	listado.add(this);
 	
 	
 	
@@ -27,7 +27,7 @@ public Anfibio(String nombre, int edad, String habitat, String genero, String co
 
 public Anfibio () {
 	
-	Anfibio.listado.add(this);
+	listado.add(this);
 	
 	
 }

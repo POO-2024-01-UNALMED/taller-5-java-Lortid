@@ -18,14 +18,14 @@ public Pez (String nombre, int edad, String habitat, String genero, String color
 	super( nombre, edad, habitat, genero);
 	this.colorEscamas = colorEscamas;
 	this.cantidadAletas = cantidadAletas;
-	Pez.listado.add(this);
+	listado.add(this);
 	
 	
 }
 
 public Pez () {
 	
-	Pez.listado.add(this);
+	listado.add(this);
 	
 }
 
