@@ -26,7 +26,7 @@ public Reptil (String nombre, int edad, String habitat, String genero, String co
 public Reptil () {
 	
 	this.listado.add(this);
-	
+	cantidadReptil++;
 }
 
 public ArrayList<Reptil> getListado (){
