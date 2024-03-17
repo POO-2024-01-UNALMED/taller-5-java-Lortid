@@ -5,7 +5,7 @@ import gestion.Zona;
 
 public class Anfibio extends Animal {
 
-	private static ArrayList<Anfibio> listado = new ArrayList<Anfibio>();
+	private static ArrayList<Anfibio> listado = new ArrayList<>();
 	public static int ranas;
 	public static int salamandras;
 	private String colorPiel;
@@ -25,7 +25,8 @@ public Anfibio(String nombre, int edad, String habitat, String genero, String co
 
 public Anfibio () {
 	
-	Anfibio.listado.add(this);
+	this(null, 0, null, null, null, false);
+	
 	
 }
 
@@ -35,7 +36,7 @@ public static ArrayList<Anfibio> getListado(){
 	return Anfibio.listado;
 }
 
-public static int getCantidadAnfibio(){
+public int CantidadAnfibios(){
 	
 	return Anfibio.listado.size();
 }

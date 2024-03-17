@@ -5,7 +5,7 @@ public class Zoologico {
 	
 	private String nombre;
 	private String ubicacion;
-	private ArrayList<Zona> zonas = new ArrayList<Zona>();
+	private ArrayList<Zona> zonas = new ArrayList<>();
 
 	
 public Zoologico (String nombre, String ubicacion) {
@@ -16,6 +16,8 @@ public Zoologico (String nombre, String ubicacion) {
 }
 
 public Zoologico() {
+	
+	this(null, null);
 	
 }
 

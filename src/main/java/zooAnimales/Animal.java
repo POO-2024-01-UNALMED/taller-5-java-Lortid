@@ -24,7 +24,7 @@ public Animal (String nombre, int edad, String habitat, String genero) {
 
 public Animal () {
 	
-	totalAnimales++;
+	this(null, 0, null, null);
 	
 }
 
@@ -100,11 +100,11 @@ public void setZona (Zona zona){
 
 public static String totalPorTipo() {
 
-	return "Mamiferos: " +	Mamifero.getCantidadMamifero() + 
-			"\n Aves: " + Ave.getCantidadAve()+ 
-			"\n Reptiles: " + Reptil.getCantidadReptil() +
-			"\n Peces: " + Pez.getCantidadPez() +
-			"\n Anfibios: " + Anfibio.getCantidadAnfibio();
+	return "Mamiferos: " +	Mamifero.getListado().size() + 
+			"\n Aves: " + Ave.getListado().size()+ 
+			"\n Reptiles: " + Reptil.getListado().size() +
+			"\n Peces: " + Pez.getListado().size() +
+			"\n Anfibios: " + Anfibio.getListado().size();
 }
 
 public String toString() {
@@ -112,8 +112,7 @@ public String toString() {
 	if (this.zona == null) {
 		
 		return "Mi nombre es " + this.nombre + ", tengo una edad de " + this.edad + ", habito en " + this.habitat + " y mi genero es " + this.genero ;
-		
-		
+			
 	}
 	
 	return "Mi nombre es " + this.nombre + ", tengo una edad de " + this.edad + ", habito en " + this.habitat + " y mi genero es " + this.genero + ", la zona en la que me ubico es " + this.getZona().getNombre() +" , en el " + this.zona.getZoo().getNombre();

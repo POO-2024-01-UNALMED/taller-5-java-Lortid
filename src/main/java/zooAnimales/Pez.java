@@ -5,17 +5,17 @@ import gestion.Zona;
 
 public class Pez extends Animal {
 
-	private static ArrayList<Pez> listado = new ArrayList<Pez>();
+	private static ArrayList<Pez> listado = new ArrayList<>();
 	public static int salmones;
 	public static int bacalaos;
 	private String colorEscamas;
 	private int cantidadAletas;
-	private static int cantidadPez;
+	
 	
 	
 public Pez (String nombre, int edad, String habitat, String genero, String colorEscamas, int cantidadAletas) {
 
-	super( nombre, edad, habitat, genero);
+	super(nombre, edad, habitat, genero);
 	this.colorEscamas = colorEscamas;
 	this.cantidadAletas = cantidadAletas;
 	Pez.listado.add(this);
@@ -25,7 +25,7 @@ public Pez (String nombre, int edad, String habitat, String genero, String color
 
 public Pez () {
 	
-	Pez.listado.add(this);
+	this(null, 0, null, null, null, 0);
 	
 }
 
@@ -88,6 +88,11 @@ public static Pez crearBacalao(String nombre, int edad, String genero) {
 	Pez nuevoBacalao = new Pez (nombre, edad, "oceano", genero, "gris", 6);
 	bacalaos++;
 	return nuevoBacalao;
+}
+
+public int cantidadPeces() {
+	
+	return Pez.listado.size();
 }
 
 

@@ -5,7 +5,7 @@ import gestion.Zona;
 
 public class Ave extends Animal {
 	
-	private static ArrayList<Ave> listado = new ArrayList<Ave>();
+	private static ArrayList<Ave> listado = new ArrayList<>();
 	public static int halcones;
 	public static int aguilas;
 	private String colorPlumas;
@@ -24,7 +24,7 @@ public Ave (String nombre, int edad, String habitat, String genero, String color
 
 public Ave () {
 	
-	Ave.listado.add(this);
+	this(null, 0, null, null, null);
 	
 }
 
@@ -34,7 +34,7 @@ public static ArrayList<Ave> getListado (){
 	
 }
 
-public static int getCantidadAve(){
+public int CantidadAves(){
 	
 	return Ave.listado.size();
 	
@@ -57,6 +57,7 @@ public void setColorPlumas (String colorPlumas) {
 	
 	this.colorPlumas = colorPlumas;
 }
+
 @Override
 public String movimiento() {
 	
