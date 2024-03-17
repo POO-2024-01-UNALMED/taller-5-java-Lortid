@@ -17,26 +17,26 @@ public Ave (String nombre, int edad, String habitat, String genero, String color
 	
 	super(nombre, edad, habitat, genero);
 	this.colorPlumas = colorPlumas;
-	listado.add(this);
+	Ave.listado.add(this);
 	
 	
 }
 
 public Ave () {
 	
-	listado.add(this);
+	Ave.listado.add(this);
 	
 }
 
-public ArrayList<Ave> getListado (){
+public static ArrayList<Ave> getListado (){
 	
-	return listado;
+	return Ave.listado;
 	
 }
 
 public static int getCantidadAve(){
 	
-	return listado.size();
+	return Ave.listado.size();
 	
 }
 

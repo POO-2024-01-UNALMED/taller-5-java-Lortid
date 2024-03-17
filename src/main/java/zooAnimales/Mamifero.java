@@ -19,26 +19,26 @@ public Mamifero (String nombre, int edad, String habitat, String genero, boolean
 	super(nombre, edad, habitat, genero);
 	this.pelaje = pelaje;
 	this.patas = patas;
-	listado.add(this);
+	Mamifero.listado.add(this);
 	
 		
 }
 
 public Mamifero () {
 	
-	listado.add(this);
+	Mamifero.listado.add(this);
 	
 }
 
-public ArrayList<Mamifero> getListado(){
+public static ArrayList<Mamifero> getListado(){
 	
-	return listado;
+	return Mamifero.listado;
 	
 }
 
 public static int getCantidadMamifero(){
 	
-	return listado.size();
+	return Mamifero.listado.size();
 	
 }
 

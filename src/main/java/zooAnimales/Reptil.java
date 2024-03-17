@@ -18,20 +18,20 @@ public Reptil (String nombre, int edad, String habitat, String genero, String co
 	super( nombre, edad, habitat, genero);
 	this.colorEscamas = colorEscamas;
 	this.largoCola = largoCola;
-	listado.add(this);
+	Reptil.listado.add(this);
 	
 	
 }
 	
 public Reptil () {
 	
-	listado.add(this);
+	Reptil.listado.add(this);
 	
 }
 
-public ArrayList<Reptil> getListado (){
+public static ArrayList<Reptil> getListado (){
 	
-	return listado;
+	return Reptil.listado;
 	
 }
 

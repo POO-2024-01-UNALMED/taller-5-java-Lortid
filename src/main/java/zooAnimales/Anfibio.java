@@ -18,29 +18,26 @@ public Anfibio(String nombre, int edad, String habitat, String genero, String co
 	super(nombre, edad, habitat, genero);
 	this.colorPiel = colorPiel;
 	this.venenoso = venenoso;
-	listado.add(this);
-	
-	
+	Anfibio.listado.add(this);
 	
 }
 
 
 public Anfibio () {
 	
-	listado.add(this);
-	
+	Anfibio.listado.add(this);
 	
 }
 
 
-public ArrayList<Anfibio> getListado(){
+public static ArrayList<Anfibio> getListado(){
 	
-	return listado;
+	return Anfibio.listado;
 }
 
 public static int getCantidadAnfibio(){
 	
-	return listado.size();
+	return Anfibio.listado.size();
 }
 
 

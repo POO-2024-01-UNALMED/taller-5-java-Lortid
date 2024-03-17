@@ -18,26 +18,26 @@ public Pez (String nombre, int edad, String habitat, String genero, String color
 	super( nombre, edad, habitat, genero);
 	this.colorEscamas = colorEscamas;
 	this.cantidadAletas = cantidadAletas;
-	listado.add(this);
+	Pez.listado.add(this);
 	
 	
 }
 
 public Pez () {
 	
-	listado.add(this);
+	Pez.listado.add(this);
 	
 }
 
-public ArrayList<Pez> getListado (){
+public static ArrayList<Pez> getListado (){
 	
-	return listado;
+	return Pez.listado;
 	
 }
 
 public static int getCantidadPez(){
 	
-	return listado.size();
+	return Pez.listado.size();
 	
 }
 

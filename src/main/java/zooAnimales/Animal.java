@@ -24,6 +24,8 @@ public Animal (String nombre, int edad, String habitat, String genero) {
 
 public Animal () {
 	
+	totalAnimales++;
+	
 }
 
 public static int getTotalAnimales () {
@@ -99,7 +101,7 @@ public void setZona (Zona zona){
 public static String totalPorTipo() {
 
 	return "Mamiferos: " +	Mamifero.getCantidadMamifero() + 
-			"\n Aves: " + Ave.getCantidadAve() + 
+			"\n Aves: " + Ave.getCantidadAve()+ 
 			"\n Reptiles: " + Reptil.getCantidadReptil() +
 			"\n Peces: " + Pez.getCantidadPez() +
 			"\n Anfibios: " + Anfibio.getCantidadAnfibio();
