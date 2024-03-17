@@ -101,10 +101,10 @@ public void setZona (Zona zona){
 public static String totalPorTipo() {
 
 	return "Mamiferos: " +	Mamifero.getListado().size() + 
-			"\n Aves: " + Ave.getListado().size()+ 
-			"\n Reptiles: " + Reptil.getListado().size() +
-			"\n Peces: " + Pez.getListado().size() +
-			"\n Anfibios: " + Anfibio.getListado().size();
+			"\nAves: " + Ave.getListado().size()+ 
+			"\nReptiles: " + Reptil.getListado().size() +
+			"\nPeces: " + Pez.getListado().size() +
+			"\nAnfibios: " + Anfibio.getListado().size();
 }
 
 public String toString() {
